@@ -1,6 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap");
+
+em {
+  font-weight: 900;
+  font-style: normal;
+  color: var(--chakra-colors-yellow-600);
+}
+
 body {
-  background-color: #00000050;
+  background-color: #000000 !important;
   height: 100vh;
+  overflow: hidden;
 }
 
 main {
@@ -16,7 +25,6 @@ main {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  height: 80vh;
   aspect-ratio: 1 / 1;
   overflow: hidden;
 
@@ -37,5 +45,17 @@ main {
 }
 
 iframe {
-  mix-blend-mode: multiply !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#mascot {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  pointer-events: none;
+}
+
+.black-bg-img {
+  background-color: #000000;
 }

@@ -1,4 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion";
+import { Box } from "@chakra-ui/react";
 import Head from "next/head";
 
 const MainLayout = ({ children }: any) => {
@@ -10,7 +11,7 @@ const MainLayout = ({ children }: any) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <Box as="main" h={{ base: "70vh", lg: "80vh" }}>
         <motion.div
           className="content-container"
           initial={{ transform: "translate(-100%, 0)", opacity: 0 }}
@@ -19,7 +20,7 @@ const MainLayout = ({ children }: any) => {
         >
           <div className="content">{children}</div>
         </motion.div>
-      </main>
+      </Box>
     </>
   );
 };
