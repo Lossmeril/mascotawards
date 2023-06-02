@@ -20,12 +20,17 @@ export default function Home() {
         <Image
           src="Mascot Awards Film Festival 2023 logo.png"
           alt="Mascot Awards Film Festival 2023 logo"
-          h="200px"
+          h={{ base: "150px", lg: "200px" }}
           mx="auto"
         />
       </Box>
       <Box>
-        <Heading as="h2" size="lg" mt={12} mb={4}>
+        <Heading
+          as="h2"
+          size={{ base: "md", lg: "lg" }}
+          mt={{ base: 6, lg: 12 }}
+          mb={4}
+        >
           This festival got balls!
         </Heading>
         <Text mb={2}>

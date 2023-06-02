@@ -6,9 +6,16 @@ em {
   color: var(--chakra-colors-yellow-600);
 }
 
+html {
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
 body {
   background-color: #000000 !important;
   height: 100vh;
+  max-height: 100vh;
   overflow: hidden;
 }
 

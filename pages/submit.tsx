@@ -14,7 +14,11 @@ export default function Submit() {
       <Heading as="h2" size="md">
         Sumbission rules
       </Heading>
-      <UnorderedList spacing={2} textAlign="left" my={6}>
+      <UnorderedList
+        spacing={{ base: 0, lg: 2 }}
+        textAlign="left"
+        my={{ base: 3, lg: 6 }}
+      >
         <ListItem>Film must be made</ListItem>
         <ListItem>We don&apos;t care how long it is</ListItem>
         <ListItem>We don&apos;t look at creation year</ListItem>
