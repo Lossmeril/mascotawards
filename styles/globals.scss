@@ -1,0 +1,25 @@
+body {
+  background-color: #00000050;
+}
+
+main {
+  background: rgb(230, 231, 232);
+  background: linear-gradient(
+    60deg,
+    rgba(230, 231, 232, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  height: 80vh;
+  aspect-ratio: 1 / 1;
+
+  .content {
+    width: 100%;
+    height: 100%;
+  }
+}
